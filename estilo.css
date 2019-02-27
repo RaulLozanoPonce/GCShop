@@ -1,0 +1,243 @@
+@media screen{
+    
+/* COMÚN */
+    body{
+        min-width: 600px;
+        padding-top: 6em;
+        background: #FFF url(fondo.jpg) repeat scroll top left;
+        background-size: cover;
+        font-family: Times, Arial, sans-serif, Helvetica;
+        font-size: 14pt;
+        text-align: justify;
+        color: black;
+    }
+    p{
+        text-indent: 2em;
+    }
+
+    /* Lista de accesos a otras páginas */
+    ul.navbar{
+        position: fixed;
+        list-style: none;
+        width: 100%;
+        min-width: 600px;
+        margin: 0;
+        top: 0;
+        left: 0;
+        padding: 2%;
+        background: black; 
+    }
+    ul.navbar img{
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-right: 5%;
+    }
+    ul.navbar li{
+        float: left;
+        width: 20%;
+        margin-right: 2%;
+        padding: 1%;
+        background-color: white;
+        text-align: center;
+    }
+    ul.navbar li:hover{
+        background-color: gray;
+    }
+    ul.navbar a{
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Cabecera de la página */
+    .cabecera{
+        float: left;
+        width: 100%;
+        color: white;
+    }
+    .cabecera h1{
+        float: left;
+        width: 60%;
+        margin-left: 2%;
+        font-family: sans-serif, Arial, Times, Helvetica;
+        font-size: 45pt;
+    }
+    .cabecera img{
+        float: right;
+        margin-right: 2%;
+        padding-top: 20px;
+    }
+    .cabecera h2{
+        float: left;
+        width: 60%;
+        margin-left: 2%;
+        font-family: Helvetica, Arial, sans-serif, Times ;
+        font-size: 20pt;
+    }
+
+    /* Separación de secciones */
+    .lineaSeparacion{
+        float: left;
+        width: 100%;
+        border-bottom-style: dotted;
+        border-bottom-width: 2px;
+        color: white;
+    }
+
+    /* Pie de página */
+    .piePag{
+        float: left;
+        width: 100%;
+        background: #DADADA;
+    }
+
+/* INDEX.HTML */
+
+    /* Cajas de texto */
+    #conjuntoTextos{
+        float: left;
+        display: flex;
+        width: 100%;
+    }
+    #conjuntoTextos #individualTexto{
+        float: left;
+        width: 45%;
+        margin: 2% auto;
+        border: 3px solid black;
+        padding: 2%;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    /* Información adicional */
+    #informacion{
+        float: left;
+        width: 100%;
+    }
+    #informacion h3{
+        font-size: 16pt;
+        text-align: center;
+        text-indent: 2em;
+    }
+    #informacion #informacionIzquierda{
+        float: left;
+        width: 94%;
+        margin: 2% 3% 2% 3%;
+        border: 3px solid black;
+        padding: 2%;
+        box-sizing: border-box;
+        background-color: white;
+    }
+    #informacion #informacionIzquierda img{
+        float: left;
+        width: 19%;
+        margin-left: 3%;
+    }
+    #informacion #informacionIzquierda h3, #informacion #informacionIzquierda p{
+        float: left;
+        width: 69%;
+        margin-left: 3%;
+    }
+    #informacion #informacionDerecha{
+        float: right;
+        width: 94%;
+        margin: 2% 3% 2% 3%;
+        border: 3px solid black;
+        padding: 2%;
+        box-sizing: border-box;
+        background-color: white;
+    }
+    #informacion #informacionDerecha img{
+        float: right;
+        width: 19%;
+        margin-right: 3%;
+    }
+    #informacion #informacionDerecha h3, #informacionDerecha p{
+        float: right;
+        width: 69%;
+        margin-right: 3%;
+    }
+
+/* TABLA.HTML */
+
+    #productos table{
+        float: left;
+        width: 96%;
+        margin: 2%;
+        background-color: white;
+        border-collapse: collapse;
+    }
+    #productos th, td{
+        padding: 10px;
+    }
+    #productos thead{
+        background-color: gray;
+        border-bottom: solid 5px black;
+        color: white;
+    }
+    #productos tr:nth-child(2n+0) td{
+        background-color: #c4c4c4;
+    }
+    #productos tr:hover td{
+        background-color: gray;
+    }
+
+/* FORMULARIO.HTML */
+
+    #formulario{
+        float: left;
+        width: 94%;
+        margin: 2% 3% 2% 3%;
+        border: 3px solid black;
+        padding: 2%;
+        box-sizing: border-box;
+        background-color: white;
+    }
+    #nombre, #apellidos, #email, #mensaje, #botones{
+        float: left;
+        width: 92%;
+        padding: 1%;
+    }
+    #formulario label{
+        float: left;
+        width: 18%;
+        margin-right: 2%;
+        font-family: Times, Arial, sans-serif, Helvetica;
+        font-size: 14pt;
+        resize: none;
+    }
+    #formulario button{
+        float: left;
+        width: 25%;
+        margin-right: 2%;
+        font-family: Times, Arial, sans-serif, Helvetica;
+        font-size: 14pt;
+        text-align: center;
+        resize: none;
+    }
+    #formulario input{
+        float: left;
+        width:20%;
+        font-family: Times, Arial, sans-serif, Helvetica;
+        font-size: 14pt;
+        resize: none;
+    }
+    #formulario textarea{
+        float: left;
+        width:100%;
+        font-family: Times, Arial, sans-serif, Helvetica;
+        font-size: 12pt;
+        resize: none;
+    }
+
+/* PRODUCTOS */
+
+    #detalles{
+        float: left;
+        width: 94%;
+        padding: 2%;
+        margin: 3%;
+        border: 3px solid black;
+        background-color: white;
+    }
+}
